@@ -1,0 +1,106 @@
+<template>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <require from="./styles.css"></require>
+
+
+  <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      
+      <div class="btn-group my-5">
+    
+        
+      </div>
+      <a href="https://manuel.pinto.dev" class="text-decoration-none">
+      </a>
+    </div>
+  </div>
+  
+
+
+
+  <div class="icon-bar">
+    <a href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    <a class="active" href="#"><i class="fa fa-eye"></i></a>
+  </div>
+
+ <div class="center">
+<font color="black" ><h1>${heading}</font></h1>
+</div>
+
+  <div class="container">
+  <form submit.trigger="addCustomer()">
+  <p>
+   <br> <input type="text" value.bind="customerFirstname" placeholder="First name" class="u-half-width">
+    <input type="text" value.bind="customerLastname" placeholder="Last name">
+    <br><input type="email" value.bind="customerEmail" placeholder="Email">
+    <br><input type="text" value.bind="customerAdress" placeholder="Address" class="u-half-width">
+    <br><input type="number" value.bind="customerPhone" placeholder="Phone number">
+   
+    <br><select id="selectProduct">
+      <option value="Option 1">Select Product...</option>
+      <option value="Option 2">First product</option>
+      <option value="Option 3">Second Product</option>
+      <option value="Option 4">Third Product</option>
+    </select> 
+  <!--Star rating-->
+   <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+</p>
+    
+    <textarea class="u-full-width" placeholder="Leave a comment about product"  id="commentMessage"></textarea>
+
+
+    <input type="checkbox">
+    <span class="label-body"><font color="black">I agree with </font><font color="blue">Terms and Conditions</font> <font color="black">of this site</font></span>
+    <br><button class="special_button" type="submit"><font color="black">Send review</font></button>
+  </p>
+</div>
+
+ 
+
+<div class="center"><h3>Our most buyed products</div></h3>
+
+
+  <div class="container">
+    <div><img src="E:\Aurelia-front\src\images\pin2.jpg" alt="Avatar" ></div>
+    <div><img src="E:\Aurelia-front\src\images\puzzle.jpg" alt="Avatar"></div>
+    <div><img src="E:\Aurelia-front\src\images\shirt.jpg" alt="Avatar"></div>
+    <div> <img src="E:\Aurelia-front\src\images\playingcards.jpg" alt="Avatar"></div>
+</div>
+
+  <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            
+                <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+                <p>Our products are in connection with you, the customer, so it`s essencial to leave a review for us to improve our line of products</p>
+        </footer>
+      
+  <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <p>2453 Mountainside Drive, Hill Village, Ohio
+            <br/>info@floorgang.com
+            <br/>EU:07 123 144 1245
+            <br/>US:555-109 352</p>
+        </div>
+    <div class="footer-copyright text-center">© 2022 Copyright: Floorgang.com</div>
+   </footer>
+  
+
+</template>
